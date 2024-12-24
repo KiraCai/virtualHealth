@@ -1,6 +1,57 @@
+@font-face {
+  font-family: 'Baloo';
+  src: url('./fonts/BalooThambi-Regular.ttf') format('ttf'),
+    url('./fonts/BalooThambi-Regular.woff') format('woff'),
+    url('./fonts/BalooThambi-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Kufi';
+  src: url('./fonts/ReemKufi-Regular.ttf') format('ttf'),
+    url('./fonts/ReemKufi-Regular.woff') format('woff'),
+    url('./fonts/ReemKufi-Regular.woff2') format('woff2');
+}
 body {
   background-color: red;
 }
 * {
   color: orange;
 }
+nav {
+  background-color: white;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 100px;
+}
+.fat {
+  font-family: 'Baloo';
+  color: #000000;
+}
+.thin {
+  font-family: 'Kufi';
+}
+.box1 {
+  grid-column-start: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: aqua;
+}
+/*.box2 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.box3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.box4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}*/
