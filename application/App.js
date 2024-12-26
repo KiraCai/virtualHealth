@@ -51,36 +51,59 @@ function Navigation() {
 function Basement() {
   return (
     <footer>
-      <div id="image-section" class="footwrap">
+      <div class="footwrap">
         <div class="fbox1">
           <div id="logofoot">
-            <img src={ind} height="63px" />
-            <img src={inst} height="63px" />
-            <img src={fac} height="63px" />
-            <img src={twi} height="63px" />
-            <img src={mail} height="63px" />
-            <img src={tel} height="63px" />
+            <img src={ind} />
+            <img src={inst} />
+            <img src={fac} />
+            <img src={twi} />
+            <img src={mail} />
+            <img src={tel} />
           </div>
         </div>
         <div class="fbox2">
-          <div class="textfoot thin create-line-left">
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Aliquet
-            volutpat ligula urna placerat finibus fermentum. Ipsum vivamus
-            fermentum himenaeos sapien leo sem. Blandit curae facilisi maecenas
-            luctus ex. Ornare interdum facilisi ridiculus a magnis semper. Eros
-            dui adipiscing condimentum viverra auctor habitasse tempor aliquet
-            egestas. Integer lectus laoreet aliquet, aliquet sociosqu fermentum.
-            Purus posuere a aenean massa sed sollicitudin turpis. Elit curae
-            libero dignissim magnis eleifend.
+          <div class="textfoot thin">
+            <p>
+              Lorem ipsum odor amet, consectetuer adipiscing elit. Aliquet
+              volutpat ligula urna placerat finibus fermentum. Ipsum vivamus
+              fermentum himenaeos sapien leo sem. Blandit curae facilisi
+              maecenas luctus ex. Ornare interdum facilisi ridiculus a magnis
+              semper. Eros dui adipiscing condimentum viverra auctor habitasse
+              tempor aliquet egestas. Integer lectus laoreet aliquet, aliquet
+              sociosqu fermentum. Purus posuere a aenean massa sed sollicitudin
+              turpis. Elit curae libero dignissim magnis eleifend.
+            </p>
           </div>
-          <div class="boxli">
+          <div class="boxli thin">
             <a href="" title="There is no link yet!">
-              Rkjuhkl
-            </a>{' '}
-            | <a href="">Ylkjjghjkjhgf</a> | <a href="">Plfjajdsfhfsd</a>
+              Psfgfents
+            </a>
+            <a href="">Mésgfsns</a>
+            <a href="">Maefwars</a>
           </div>
         </div>
-        <div class="fbox3">block2</div>
+        <div class="fbox3">
+          <div class="textfoot thin">
+            <p>
+              Lorem ipsum odor amet, consectetuer adipiscing elit. Aliquet
+              volutpat ligula urna placerat finibus fermentum. Ipsum vivamus
+              fermentum himenaeos sapien leo sem. Blandit curae facilisi
+              maecenas luctus ex. Ornare interdum facilisi ridiculus a magnis
+              semper. Eros dui adipiscing condimentum viverra auctor habitasse
+              tempor aliquet egestas. Integer lectus laoreet aliquet, aliquet
+              sociosqu fermentum. Purus posuere a aenean massa sed sollicitudin
+              turpis. Elit curae libero dignissim magnis eleifend.
+            </p>
+          </div>
+          <div class="boxli thin">
+            <a href="" title="There is no link yet!">
+              Psfgfents
+            </a>
+            <a href="">Mésgfsns</a>
+            <a href="">Maefwars</a>
+          </div>
+        </div>
       </div>
     </footer>
   );
