@@ -1,0 +1,97 @@
+main {
+  background-color: white;
+  /*height: 200px;*/
+}
+.wrapperSlide {
+  position: absolute;
+  left: 45%;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  row-gap: 50px;
+}
+.wrapperSlide input {
+  appearance: none;
+  border: 5px solid rgb(0, 0, 0, 60%);
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  background-color: rgb(225, 225, 225, 50%);
+  transition: all 0.2s ease-in-out;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.wrapperSlide input:checked {
+  width: 19px;
+  height: 19px;
+  background-color: rgb(0, 0, 0, 50%);
+  border: 3px solid white;
+  outline-style: solid;
+  outline-color: black;
+  outline-width: 3px;
+}
+.slides {
+  position: relative;
+}
+.slides img {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: cover;
+}
+.articleHome {
+  background-color: white; /*потом убрать*/
+  font-size: 24px;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 70%;
+  text-align: justify;
+}
+#news {
+  background-color: #4474b2;
+  height: minmax(90px, auto);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  /*grid-template-rows: repeat(auto-fit);*/
+
+  align-self: center; /*y*/
+  justify-self: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+.nameNews {
+  color: white;
+  font-size: 45px;
+}
+#newsLine {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin: 20px;
+}
+#newsLine div {
+  width: 90%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /*max-height: 80vh;
+  object-fit: cover;*/
+}
+#pic1 {
+  background-image: url('./pictures/job.jpg');
+}
+#pic2 {
+  background-image: url('./pictures/food.jpg');
+}
+#pic3 {
+  background-image: url('./pictures/footprints.jpg');
+}

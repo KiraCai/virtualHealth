@@ -1,7 +1,9 @@
 import React from 'react';
+import MainApp from './HomePage';
+
 import logo from './pictures/knapweed1.png';
 import search from './pictures/search.png';
-import fooflogo from './pictures/knapweed2.png';
+
 import ind from './pictures/linkedin.png';
 import inst from './pictures/inst.png';
 import fac from './pictures/facebook.png';
@@ -13,9 +15,7 @@ export default function MyApp() {
   return (
     <>
       <Navigation />
-      <div>
-        <h1></h1>
-      </div>
+      <MainApp />
       <Basement />
     </>
   );
