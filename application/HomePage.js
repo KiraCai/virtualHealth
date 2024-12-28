@@ -1,11 +1,19 @@
 import React, { useState, useLayoutEffect } from 'react';
+
 import man from './pictures/man.jpg';
 import forest from './pictures/forest.jpg';
 import red from './pictures/red.jpg';
+import left from './pictures/leftarrow.png';
+import right from './pictures/rightarrow.png';
 
 export default function MainApp() {
   return <MainContent />;
 }
+
+/*function clickMe() {
+  alert(selectedValue);
+  alert('You clicked me!');
+}*/
 function MainContent() {
   /*hook original state*/
   const [selectedValue, setSelectedValue] = useState('man1');
@@ -14,6 +22,7 @@ function MainContent() {
     setSelectedValue(value);
   };
   var resultPict;
+  var iteration = 0;
   if (selectedValue === 'man1') {
     resultPict = man;
   } else if (selectedValue === 'work1') {
@@ -21,12 +30,43 @@ function MainContent() {
   } else {
     resultPict = forest;
   }
+  var arrayFoto = ['man1', 'work1', 'nature1'];
+  if (arrayFoto.includes(selectedValue)) {
+    iteration = arrayFoto.indexOf(selectedValue);
+  }
+  //function for click
+  var clickMeL = () => {
+    if (iteration === 0) {
+      iteration = arrayFoto.length;
+    }
+    iteration -= 1;
+    var newValue = arrayFoto[iteration];
+    setSelectedValue(newValue);
+  };
+  var clickMeR = () => {
+    iteration += 1;
+    if (iteration === arrayFoto.length) {
+      iteration = 0;
+    }
+    var newValue = arrayFoto[iteration];
+    setSelectedValue(newValue);
+  };
 
   return (
     <main class="thin">
       <div class="slides">
         <img src={resultPict} />
       </div>
+      <div class="buttonLR">
+        <button id="left" type="button" onClick={clickMeL}>
+          <img src={left} />
+        </button>
+        <button id="right" type="button" onClick={clickMeR}>
+          {' '}
+          <img src={right} />
+        </button>
+      </div>
+
       <div class="wrapperSlide">
         <input
           type="radio"
@@ -81,9 +121,21 @@ function MainContent() {
       <div id="news" class="thin">
         <h2 class="nameNews fat">Actualités</h2>
         <div id="newsLine">
-          <div id="pic1">Gfdfghjklj</div>
-          <div id="pic2">Gfdfghjklj</div>
-          <div id="pic3">Gfdfghjklj</div>
+          <div id="pic1">
+            <a href="" title="There is no link yet!">
+              Gfdfghjklj
+            </a>
+          </div>
+          <div id="pic2">
+            <a href="" title="There is no link yet!">
+              Gfdfghjklj
+            </a>
+          </div>
+          <div id="pic3">
+            <a href="" title="There is no link yet!">
+              Gfdfghjklj
+            </a>
+          </div>
         </div>
       </div>
     </main>

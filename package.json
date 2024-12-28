@@ -1080,6 +1080,8 @@
   },
   "dependencies": {
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-native": "^0.76.5",
+    "react-native-card-stack": "^0.2.8"
   }
 }

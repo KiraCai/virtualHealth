@@ -15,6 +15,11 @@
   --main-dark-color: #1a3376;
 }
 /*for header*/
+/*header {
+  position: fixed;
+  z-index: 9999;
+  margin: 20px;
+}*/
 body {
   background-color: white;
   margin: 0;
@@ -47,6 +52,10 @@ nav {
 .wrapper {
   margin: 15px;
 }
+.wrapper div a {
+  text-decoration: none;
+}
+
 .box1 {
   grid-area: a;
   color: #000000;
@@ -58,14 +67,28 @@ nav {
   justify-content: space-evenly;
   border: 2px solid black;
   padding-left: 28px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   padding-right: 28px;
 }
 .box1 > * {
   color: #000000;
   background-color: white;
   font-size: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.box1 a:hover:not(.buttonStyleDark) {
+  right: 0px;
+  bottom: 0px;
+  width: 90%;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  content: '';
+  background-color: var(--main-dark-color); /*rgb(0, 0, 0, 70%);*/
+  color: white;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 .box2 {
   grid-area: b;
@@ -102,6 +125,10 @@ nav {
   padding-bottom: 6px;
   padding-right: 10px;
 }
+.buttonStyleDark:hover {
+  background-color: white; /*rgb(0, 0, 0, 70%);*/
+  color: var(--main-dark-color);
+}
 /*for footer*/
 .footwrap {
   display: grid;
@@ -135,8 +162,14 @@ nav {
   justify-content: space-around; /*x*/
   grid-gap: 10px;
 }
-#logofoot img {
+#logofoot a {
   height: 50px;
+  transition: 0.3s ease-in-out;
+}
+
+#logofoot a:hover {
+  background-color: rgb(0, 0, 0, 60%);
+  padding: 7px;
 }
 .fbox2 {
   grid-area: two;
@@ -203,10 +236,20 @@ nav {
 }
 
 .boxli > * {
+  text-decoration: none;
   color: white;
   font-size: 20px;
   z-index: 20;
   margin: 40px;
   margin-top: 30px;
   margin-bottom: 30px;
+  transition: 0.3s ease-in-out;
+}
+.boxli a:hover {
+  background-color: rgb(0, 0, 0, 60%);
+
+  border: 5px solid rgb(0, 0, 0, 60%);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
 }

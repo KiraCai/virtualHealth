@@ -54,12 +54,25 @@ function Basement() {
       <div class="footwrap">
         <div class="fbox1">
           <div id="logofoot">
-            <img src={ind} />
-            <img src={inst} />
-            <img src={fac} />
-            <img src={twi} />
-            <img src={mail} />
-            <img src={tel} />
+            <a href="" title="There is no link yet!">
+              {' '}
+              <img src={ind} />
+            </a>
+            <a href="" title="There is no link yet!">
+              <img src={inst} />
+            </a>
+            <a href="" title="There is no link yet!">
+              <img src={fac} />
+            </a>
+            <a href="" title="There is no link yet!">
+              <img src={twi} />
+            </a>
+            <a href="" title="There is no link yet!">
+              <img src={mail} />
+            </a>
+            <a href="" title="There is no link yet!">
+              <img src={tel} />
+            </a>
           </div>
         </div>
         <div class="fbox2">
