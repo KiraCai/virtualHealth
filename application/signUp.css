@@ -1,4 +1,31 @@
-.sign {
-  z-index: 1000;
-  background-color: blueviolet;
+.mainSign {
+  /*background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5)),
+    url('./pictures/water.jpg');*/
+  background-image: url('./pictures/water.jpg');
+  z-index: 0;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.signPage {
+  background-color: rgb(0, 0, 0, 60%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+}
+#signForm {
+  background-color: rgb(225, 225, 225, 80%);
+  color: black;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 70px;
 }
