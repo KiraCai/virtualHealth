@@ -6,14 +6,6 @@ module.exports = {
   module: {
     rules: [
       { test: /\.css$/, use: ['style-loader', 'css-loader'] },
-      /*{
-        test: /\.js$/,
-        use: 'babel-loader',
-        loader: 'babel',
-        query: { compact: false },
-
-        
-      },*/
       {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
@@ -55,5 +47,11 @@ module.exports = {
       filename: './index.html',
     }),
   ],
+  devServer: {
+    static: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 8080,
+    historyApiFallback: true, // Для обработки путей React Router
+  },
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
 };

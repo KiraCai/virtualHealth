@@ -1,9 +1,4 @@
 import React from 'react';
-import MainApp from './HomePage';
-
-import logo from './pictures/knapweed1.png';
-import search from './pictures/search.png';
-
 import ind from './pictures/linkedin.png';
 import inst from './pictures/inst.png';
 import fac from './pictures/facebook.png';
@@ -11,48 +6,11 @@ import twi from './pictures/twit.png';
 import mail from './pictures/mail.png';
 import tel from './pictures/tel.png';
 
-export default function MyApp() {
-  return (
-    <>
-      <Navigation />
-      <MainApp />
-      <Basement />
-    </>
-  );
-}
-function Navigation() {
-  return (
-    <header>
-      <nav class="wrapper">
-        <div class="box1 thin">
-          <a href="" title="There is no link yet!">
-            Patients
-          </a>{' '}
-          | <a href="">Médecins</a> | <a href="">FAO</a> |
-          <a class="buttonStyleDark" href="">
-            INSCRIPTION
-          </a>{' '}
-          |{' '}
-          <a class="buttonStyleDark" href="">
-            CONNECTION
-          </a>
-        </div>
-        <div class="box2 fat">PORTAL SANTE</div>
-        <div class="box3">
-          <img src={logo} height="181px" />
-        </div>
-        <div class="box4 fat">
-          TROUVER UN MEDECIN <img src={search} height="41px" />
-        </div>
-      </nav>
-    </header>
-  );
-}
-function Basement() {
+const Basement = () => {
   return (
     <footer>
-      <div class="footwrap">
-        <div class="fbox1">
+      <div className="footwrap">
+        <div className="fbox1">
           <div id="logofoot">
             <a href="" title="There is no link yet!">
               {' '}
@@ -75,8 +33,8 @@ function Basement() {
             </a>
           </div>
         </div>
-        <div class="fbox2">
-          <div class="textfoot thin">
+        <div className="fbox2">
+          <div className="textfoot thin">
             <p>
               Lorem ipsum odor amet, consectetuer adipiscing elit. Aliquet
               volutpat ligula urna placerat finibus fermentum. Ipsum vivamus
@@ -88,7 +46,7 @@ function Basement() {
               turpis. Elit curae libero dignissim magnis eleifend.
             </p>
           </div>
-          <div class="boxli thin">
+          <div className="boxli thin">
             <a href="" title="There is no link yet!">
               Psfgfents
             </a>
@@ -96,8 +54,8 @@ function Basement() {
             <a href="">Maefwars</a>
           </div>
         </div>
-        <div class="fbox3">
-          <div class="textfoot thin">
+        <div className="fbox3">
+          <div className="textfoot thin">
             <p>
               Lorem ipsum odor amet, consectetuer adipiscing elit. Aliquet
               volutpat ligula urna placerat finibus fermentum. Ipsum vivamus
@@ -109,7 +67,7 @@ function Basement() {
               turpis. Elit curae libero dignissim magnis eleifend.
             </p>
           </div>
-          <div class="boxli thin">
+          <div className="boxli thin">
             <a href="" title="There is no link yet!">
               Psfgfents
             </a>
@@ -120,4 +78,6 @@ function Basement() {
       </div>
     </footer>
   );
-}
+};
+
+export default Basement;

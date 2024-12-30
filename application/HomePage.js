@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React, { useState } from 'react';
 
 import man from './pictures/man.jpg';
 import forest from './pictures/forest.jpg';
@@ -6,58 +6,43 @@ import red from './pictures/red.jpg';
 import left from './pictures/leftarrow.png';
 import right from './pictures/rightarrow.png';
 
-export default function MainApp() {
-  return <MainContent />;
-}
-
-/*function clickMe() {
-  alert(selectedValue);
-  alert('You clicked me!');
-}*/
-function MainContent() {
+const HomePage = () => {
   /*hook original state*/
   const [selectedValue, setSelectedValue] = useState('man1');
+  const [iteration, setIteration] = useState(0);
+  var arrayFoto = ['man1', 'work1', 'nature1'];
+  const images = {
+    man1: man,
+    work1: red,
+    nature1: forest,
+  };
 
   const handleChange = (value) => {
     setSelectedValue(value);
   };
-  var resultPict;
-  var iteration = 0;
-  if (selectedValue === 'man1') {
-    resultPict = man;
-  } else if (selectedValue === 'work1') {
-    resultPict = red;
-  } else {
-    resultPict = forest;
-  }
-  var arrayFoto = ['man1', 'work1', 'nature1'];
-  if (arrayFoto.includes(selectedValue)) {
-    iteration = arrayFoto.indexOf(selectedValue);
-  }
+
   //function for click
-  var clickMeL = () => {
-    if (iteration === 0) {
-      iteration = arrayFoto.length;
-    }
-    iteration -= 1;
-    var newValue = arrayFoto[iteration];
-    setSelectedValue(newValue);
-  };
-  var clickMeR = () => {
-    iteration += 1;
-    if (iteration === arrayFoto.length) {
-      iteration = 0;
-    }
-    var newValue = arrayFoto[iteration];
-    setSelectedValue(newValue);
+  const clickMeL = () => {
+    const newIndex = (iteration - 1 + arrayFoto.length) % arrayFoto.length;
+    setIteration(newIndex);
+    setSelectedValue(arrayFoto[newIndex]);
   };
 
+  // Function to update slide index on right click
+  const clickMeR = () => {
+    const newIndex = (iteration + 1) % arrayFoto.length;
+    setIteration(newIndex);
+    setSelectedValue(arrayFoto[newIndex]);
+  };
+
+  const resultPict = images[selectedValue] || images.man1;
+
   return (
-    <main class="thin">
-      <div class="slides">
+    <main className="thin">
+      <div className="slides">
         <img src={resultPict} />
       </div>
-      <div class="buttonLR">
+      <div className="buttonLR">
         <button id="left" type="button" onClick={clickMeL}>
           <img src={left} />
         </button>
@@ -67,16 +52,16 @@ function MainContent() {
         </button>
       </div>
 
-      <div class="wrapperSlide">
+      <div className="wrapperSlide">
         <input
           type="radio"
           id="slide1"
           name="bar"
-          value="man1" /*не показывается пользователю, чтобы точно определить какая кнопка была выбрана*/
+          value="man1" /*is not shown to the user to determine exactly which button was selected*/
           onChange={() => handleChange('man1')}
           checked={selectedValue === 'man1'}
         />
-        <label for="slide1"></label>
+        <label htmlFor="slide1"></label>
         <input
           type="radio"
           id="slide2"
@@ -85,7 +70,7 @@ function MainContent() {
           onChange={() => handleChange('work1')}
           checked={selectedValue === 'work1'}
         />
-        <label for="slide2"></label>
+        <label htmlFor="slide2"></label>
         <input
           type="radio"
           id="slide3"
@@ -94,10 +79,10 @@ function MainContent() {
           onChange={() => handleChange('nature1')}
           checked={selectedValue === 'nature1'}
         />
-        <label for="slide3"></label>
+        <label htmlFor="slide3"></label>
       </div>
       <div>
-        <article class="articleHome fat">
+        <article className="articleHome fat">
           <p>
             Lorem ipsum odor amet, consectetuer adipiscing elit. Fames cras
             fusce duis inceptos faucibus amet nulla. Taciti aenean nam feugiat;
@@ -118,8 +103,8 @@ function MainContent() {
           </p>
         </article>
       </div>
-      <div id="news" class="thin">
-        <h2 class="nameNews fat">Actualités</h2>
+      <div id="news" className="thin">
+        <h2 className="nameNews fat">Actualités</h2>
         <div id="newsLine">
           <div id="pic1">
             <a href="" title="There is no link yet!">
@@ -140,4 +125,5 @@ function MainContent() {
       </div>
     </main>
   );
-}
+};
+export default HomePage;
