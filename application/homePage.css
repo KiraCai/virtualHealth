@@ -71,7 +71,7 @@ main {
   left: 1260px;
 }
 .articleHome {
-  background-color: white; /*потом убрать*/
+  /*background-color: white; потом убрать*/
   font-size: 24px;
   display: flex;
   align-self: center;

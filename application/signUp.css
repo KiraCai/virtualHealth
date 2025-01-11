@@ -3,7 +3,7 @@
     url('./pictures/water.jpg');*/
   background-image: url('./pictures/water.jpg');
   z-index: 0;
-  height: 800px;
+  /*height: 800px;*/
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -18,8 +18,11 @@
   height: 100%;
   color: white;
 }
+#layoutCart {
+  margin-bottom: 80px;
+}
 #signForm {
-  background-color: rgb(225, 225, 225, 80%);
+  background-color: rgb(225, 225, 225, 90%);
   color: black;
   z-index: 20;
   display: flex;
@@ -27,5 +30,82 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  gap: 70px;
+  gap: 20px;
 }
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  font-size: 30px;
+}
+.titleStyle {
+  font-size: 52px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/**:required {
+  border-color: #800000;
+  background-color: #ffdddd;
+  border-width: 3px;
+}*/
+.btn {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 352px;
+}
+.text-danger {
+  color: rgb(230, 6, 6);
+  font-size: 20px;
+  font-family: 'Kufi';
+  margin-top: 15px;
+}
+.articleClue {
+  text-align: left;
+}
+.rules {
+  font-size: 14px;
+}
+
+input {
+  border: 2px solid black;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  font-family: 'Kufi';
+  font-size: 22px;
+  background-color: white;
+  height: 45px;
+  width: 352px;
+}
+input:focus {
+  background-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px rgb(0, 0, 0, 70%) inset !important;
+  -webkit-text-fill-color: #b0d7eb;
+}
+input:valid:not(.btn) {
+  background-color: #b0d7eb; /*#68afd2;*/
+}
+input:invalid {
+  -webkit-box-shadow: 0 0 0px 1000px rgb(230, 68, 146) inset !important;
+  -webkit-text-fill-color: white;
+}
+input:valid:not(.btn):focus {
+  background-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px rgb(0, 0, 0, 70%) inset !important;
+  -webkit-text-fill-color: #b0d7eb;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #b0d7eb inset !important;
+  -webkit-background-clip: text;
+  transition: background-color 5000s ease-in-out 0s;
+}
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px rgb(0, 0, 0, 70%) inset !important;
+  -webkit-text-fill-color: #b0d7eb;
+}
+/*#cdff07
+#dbe398
+rgba(223, 14, 14, 0.7)
+rgb(230, 68, 146)*/
