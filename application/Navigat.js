@@ -15,7 +15,7 @@ const Navigat = () => {
               INSCRIPTION
             </Link>
             |
-            <Link className="buttonStyleDark" to="/home">
+            <Link className="buttonStyleDark" to="/login">
               CONNECTION
             </Link>
           </div>

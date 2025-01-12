@@ -15,11 +15,6 @@
   --main-dark-color: #1a3376;
 }
 /*for header*/
-/*header {
-  position: fixed;
-  z-index: 9999;
-  margin: 20px;
-}*/
 body {
   background-color: white;
   margin: 0;
@@ -174,7 +169,7 @@ nav {
 }
 
 #logofoot a:hover {
-  background-color: rgb(225, 225, 225, 50%);
+  background-color: rgb(225, 225, 225, 70%);
   /*padding: 7px;*/
 }
 .fbox2 {

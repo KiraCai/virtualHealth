@@ -1,5 +1,5 @@
 import React from 'react';
-//import { Button } from 'react-native';
+import { Link } from 'react-router-dom';
 
 class SignUp extends React.Component {
   constructor() {
@@ -67,7 +67,6 @@ class SignUp extends React.Component {
       <main className="mainSign thin">
         <div className="signPage fat">
           <div className="titleStyle">Inscription</div>
-
           <div id="layoutCart">
             <form id="signForm" method="post" onSubmit={this.handleSubmit}>
               <div className="input-box">
@@ -170,11 +169,11 @@ class SignUp extends React.Component {
               />
               <div className="input-box">
                 <label> Déjà inscrit?</label>
-                <input
-                  type="button"
-                  value="entrez"
-                  className="btn buttonStyleDark"
-                />
+                <div className="btnLink">
+                  <Link className="btn buttonStyleDark thin" to="/login">
+                    entrez
+                  </Link>
+                </div>
               </div>
             </form>
           </div>

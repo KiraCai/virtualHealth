@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigat from './Navigat';
 import HomePage from './HomePage';
 import SignUp from './SignUp';
-import Home from './Home';
+import Login from './Login';
 import Blogs from './Blogs';
 import Basement from './Basement';
 
@@ -25,7 +25,7 @@ root.render(
         <Route path="/" element={<Navigat />}>
           <Route index element={<HomePage />} />
           <Route path="signup" element={<SignUp />} />
-          <Route path="home" element={<Home />} />
+          <Route path="login" element={<Login />} />
           <Route path="blogs" element={<Blogs />} />
         </Route>
       </Routes>
