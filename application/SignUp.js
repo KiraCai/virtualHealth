@@ -162,11 +162,13 @@ class SignUp extends React.Component {
                   {this.state.errors.confirm_password}
                 </div>
               </div>
-              <input
-                type="submit"
-                value="inscription"
-                className="btn buttonStyleDark"
-              />
+              <div className="input-box">
+                <input
+                  type="submit"
+                  value="inscription"
+                  className="btn buttonStyleDark"
+                />
+              </div>
               <div className="input-box">
                 <label> Déjà inscrit?</label>
                 <div className="btnLink">

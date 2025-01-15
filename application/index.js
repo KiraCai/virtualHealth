@@ -7,11 +7,13 @@ import SignUp from './SignUp';
 import Login from './Login';
 import Blogs from './Blogs';
 import Basement from './Basement';
+import Search from './Search';
 
 import './index.css';
 import './homePage.css';
 import './index.html';
 import './signUp.css';
+import './Search.css';
 
 const div = document.createElement('div');
 div.setAttribute('id', 'app');
@@ -26,6 +28,7 @@ root.render(
           <Route index element={<HomePage />} />
           <Route path="signup" element={<SignUp />} />
           <Route path="login" element={<Login />} />
+          <Route path="search" element={<Search />} />
           <Route path="blogs" element={<Blogs />} />
         </Route>
       </Routes>

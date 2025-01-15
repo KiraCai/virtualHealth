@@ -46,11 +46,13 @@ class Login extends React.Component {
                 />
                 <div className="text-danger">{this.state.errors.password}</div>
               </div>
-              <input
-                type="submit"
-                value="entrez"
-                className="btn buttonStyleDark"
-              />
+              <div className="input-box">
+                <input
+                  type="submit"
+                  value="entrez"
+                  className="btn buttonStyleDark"
+                />
+              </div>
               <div className="input-box">
                 <label> Pas encore inscrit ?</label>
                 <div className="btnLink">

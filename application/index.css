@@ -103,13 +103,6 @@ nav {
   font-size: 30px;
   border: 2px solid black;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding-left: 14px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-right: 14px;
 }
 .buttonStyleDark {
   color: white;
@@ -134,7 +127,6 @@ nav {
   grid-gap: 0px;
   align-items: center;
   margin: 0px;
-
   background-image: url('./pictures/knapweed2.png');
   background-repeat: no-repeat;
   background-size: cover;

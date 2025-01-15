@@ -85,14 +85,16 @@
   margin: 0px;
 }
 
-input {
+.input-box > input {
   border: 2px solid black;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   font-family: 'Kufi';
   font-size: 22px;
-  background-color: white;
   height: 45px;
   width: 352px;
+}
+.input-box > input:not(.btn) {
+  background-color: white;
 }
 input:focus:not(.btn) {
   background-color: white;

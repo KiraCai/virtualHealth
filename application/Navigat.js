@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import logo from './pictures/knapweed1.png';
-import search from './pictures/search.png';
+import searchLogo from './pictures/search.png';
 
 const Navigat = () => {
   return (
@@ -24,7 +24,9 @@ const Navigat = () => {
             <img src={logo} height="181px" />
           </div>
           <div className="box4 fat">
-            TROUVER UN MEDECIN <img src={search} height="41px" />
+            <Link id="searchLink" to="/search">
+              TROUVER UN MEDECIN <img src={searchLogo} height="41px" />
+            </Link>
           </div>
         </nav>
       </header>
