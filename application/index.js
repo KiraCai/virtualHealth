@@ -14,6 +14,7 @@ import './homePage.css';
 import './index.html';
 import './signUp.css';
 import './Search.css';
+import './Result.css';
 
 const div = document.createElement('div');
 div.setAttribute('id', 'app');

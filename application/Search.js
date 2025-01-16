@@ -2,6 +2,7 @@ import React from 'react';
 import InputLabel from '@mui/material/InputLabel';
 import { MenuItem } from '@mui/material';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
+import Result from './Result';
 
 const Search = () => {
   var optionsCity = [
@@ -134,6 +135,7 @@ const Search = () => {
       </div>
 
       <div className="titleStyle lineStyle fat">Résultats de la recherche</div>
+      <Result />
 
       <div>
         <article className="articleHome fat">
