@@ -8,6 +8,7 @@ import Login from './Login';
 import Blogs from './Blogs';
 import Basement from './Basement';
 import Search from './Search';
+import ChooseDoc from './ChooseDoc';
 
 import './index.css';
 import './homePage.css';
@@ -15,6 +16,7 @@ import './index.html';
 import './signUp.css';
 import './Search.css';
 import './Result.css';
+import './chooseDoc.css';
 
 const div = document.createElement('div');
 div.setAttribute('id', 'app');
@@ -31,6 +33,7 @@ root.render(
           <Route path="login" element={<Login />} />
           <Route path="search" element={<Search />} />
           <Route path="blogs" element={<Blogs />} />
+          <Route path="choosingDoc" element={<ChooseDoc />} />
         </Route>
       </Routes>
       <Basement />

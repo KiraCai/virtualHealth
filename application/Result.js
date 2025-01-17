@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, Outlet } from 'react-router-dom';
 
 const Result = () => {
   return (
@@ -43,7 +44,11 @@ const Bloc = () => {
           vehicula; vel taciti lacinia feugiat urna.
         </p>
       </div>
-      <div className="buttonStyleDark fat"> sélectionner une date</div>
+      <div>
+        <Link className="buttonStyleDark fat" to="/choosingDoc">
+          sélectionner une date
+        </Link>
+      </div>
     </div>
   );
 };

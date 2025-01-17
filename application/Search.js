@@ -51,7 +51,7 @@ const Search = () => {
       <div className="searcheBloc">
         <div className="titleStyle fat">Paramètres de recherche</div>
         <div className="searchFields">
-          <form id="searchForm" method="post">
+          <form className="searchForm" method="post">
             <div className="searchBox">
               <div className="choiceBox">
                 <InputLabel id="select-helper-label">Ville</InputLabel>
@@ -133,10 +133,8 @@ const Search = () => {
           </form>
         </div>
       </div>
-
       <div className="titleStyle lineStyle fat">Résultats de la recherche</div>
       <Result />
-
       <div>
         <article className="articleHome fat">
           <p>

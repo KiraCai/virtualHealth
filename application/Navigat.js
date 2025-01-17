@@ -24,7 +24,7 @@ const Navigat = () => {
             <img src={logo} height="181px" />
           </div>
           <div className="box4 fat">
-            <Link id="searchLink" to="/search">
+            <Link className="searchLink" to="/search">
               TROUVER UN MEDECIN <img src={searchLogo} height="41px" />
             </Link>
           </div>
