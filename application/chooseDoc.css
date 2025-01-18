@@ -3,24 +3,24 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 400px;
+  /*height: 400px;*/
   width: 100%;
   padding-top: 50px;
   padding-bottom: 10px;
+  gap: 30px;
 }
-
 #leftBloc {
-  background-color: rgb(0, 0, 0, 50%);
+  /*background-color: rgb(0, 0, 0, 50%);*/
   height: 100%;
   width: 50%;
-  display: row;
+  display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
   gap: 30px;
 }
 #rightBloc {
-  background-color: rgb(0, 0, 0, 100%);
+  background-color: rgb(0, 0, 0, 50%);
   height: 100%;
   width: 50%;
   display: flex;
@@ -29,9 +29,13 @@
   justify-content: center;
 }
 #upBloc {
+  background-color: rgb(0, 0, 0, 50%);
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
+  padding: 34px;
 }
 #upleftBloc {
   display: flex;
@@ -39,6 +43,10 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
+  width: 50%;
+}
+#upleftBloc p {
+  line-height: 2;
 }
 #upRightBloc {
   display: flex;
@@ -46,4 +54,41 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
+  height: 80%;
+  margin: 30px;
+}
+.longBloc {
+  padding: 20px;
+  background-color: white;
+  border: 2px solid black;
+  font-size: 18px;
+  text-align: justify;
+}
+.upRightBloc .namePers {
+  margin-bottom: 30px;
+}
+#bottomBloc {
+  background-color: rgb(0, 0, 0, 50%);
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 400px;
+  align-content: center;
+  align-items: center;
+}
+#bottomBloc .thin {
+  font-size: 18px;
+  text-align: justify;
+  padding: 30px;
+}
+#mapFoto {
+  width: 350px;
+  height: 300px;
+  background-image: url('./pictures/map.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 20;
+  border: solid black 2px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  margin: 34px;
 }
