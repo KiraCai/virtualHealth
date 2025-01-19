@@ -60,6 +60,8 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
+  height: 100%;
+  width: 465px;
 }
 .searchBox {
   display: flex;

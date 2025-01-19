@@ -1,1 +1,0 @@
-import"./index.css";import MyApp from"./app.js";import"./index.html";

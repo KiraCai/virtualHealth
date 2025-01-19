@@ -52,6 +52,10 @@ module.exports = {
     compress: true,
     port: 8080,
     historyApiFallback: true, // Для обработки путей React Router
+    hot: true,
+
+    // open: true,
   },
+  // watch: true,
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
 };
