@@ -1,0 +1,55 @@
+#headLineTop > .titleStyle {
+  color: white;
+}
+#navigAncor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  background-color: rgb(0, 0, 0, 0%);
+  color: black;
+  font-size: 25px;
+  margin-top: 40px;
+  padding-left: 60px;
+}
+#headLineTop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 60%);
+  height: 195px;
+  padding-left: 60px;
+}
+#headLineTop .titleStyle {
+  text-align: left;
+}
+#searchPanel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  gap: 20px;
+  background-color: rgb(0, 0, 0, 60%);
+  height: 120px;
+  width: 807px;
+}
+#searchPanel::before {
+  position: absolute;
+  top: -20px;
+  left: 130px;
+  width: 80%;
+  border: 2px solid black;
+  content: '';
+}
+
+.choisePanel {
+  font-size: 25px;
+  height: 40px;
+  width: 315px;
+  background-color: white;
+}

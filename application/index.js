@@ -9,14 +9,16 @@ import Blogs from './Blogs';
 import Basement from './Basement';
 import Search from './Search';
 import ChooseDoc from './ChooseDoc';
+import PersonalAcc from './src/personal/PersonalAcc';
 
-import './index.css';
-import './homePage.css';
+import './style/personal/index.css';
+import './style/personal/homePage.css';
 import './index.html';
-import './signUp.css';
-import './Search.css';
-import './Result.css';
-import './chooseDoc.css';
+import './style/personal/signUp.css';
+import './style/personal/Search.css';
+import './style/personal/Result.css';
+import './style/personal/chooseDoc.css';
+import './style/personal/personalAcc.css';
 
 const div = document.createElement('div');
 div.setAttribute('id', 'app');
@@ -29,6 +31,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Navigat />}>
           <Route index element={<HomePage />} />
+          <Route path="personal" element={<PersonalAcc />} />
           <Route path="signup" element={<SignUp />} />
           <Route path="login" element={<Login />} />
           <Route path="search" element={<Search />} />

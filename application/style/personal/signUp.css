@@ -5,7 +5,7 @@
   --color-reverse-light: #b0d7eb;
 }
 .mainSign {
-  background-image: url('./pictures/water.jpg');
+  background-image: url('../../pictures/water.jpg');
   z-index: 0;
   background-repeat: no-repeat;
   background-size: cover;

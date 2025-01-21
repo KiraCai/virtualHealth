@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'Baloo';
-  src: url('./fonts/BalooThambi-Regular.ttf') format('ttf'),
-    url('./fonts/BalooThambi-Regular.woff') format('woff'),
-    url('./fonts/BalooThambi-Regular.woff2') format('woff2');
+  src: url('../../fonts/BalooThambi-Regular.ttf') format('ttf'),
+    url('../../fonts/BalooThambi-Regular.woff') format('woff'),
+    url('../../fonts/BalooThambi-Regular.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Kufi';
-  src: url('./fonts/ReemKufi-Regular.ttf') format('ttf'),
-    url('./fonts/ReemKufi-Regular.woff') format('woff'),
-    url('./fonts/ReemKufi-Regular.woff2') format('woff2');
+  src: url('../../fonts/ReemKufi-Regular.ttf') format('ttf'),
+    url('../../fonts/ReemKufi-Regular.woff') format('woff'),
+    url('../../fonts/ReemKufi-Regular.woff2') format('woff2');
 }
 :root {
   /*main Dark Blue color*/
@@ -104,6 +104,9 @@ nav {
   border: 2px solid black;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
+.box4 > .searchLink {
+  color: black;
+}
 .buttonStyleDark {
   color: white;
   background-color: var(--main-dark-color);
@@ -129,7 +132,7 @@ nav {
   grid-gap: 0px;
   align-items: center;
   margin: 0px;
-  background-image: url('./pictures/knapweed2.png');
+  background-image: url('../../pictures/knapweed2.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;

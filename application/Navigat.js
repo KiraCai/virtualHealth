@@ -9,8 +9,8 @@ const Navigat = () => {
       <header>
         <nav className="wrapper">
           <div className="box1 thin">
-            <Link to="/">Patients</Link>|<Link to="/blogs">Médecins</Link>|
-            <Link to="/blogs">FAO</Link>|
+            <Link to="/personal">Patients</Link>|
+            <Link to="/blogs">Médecins</Link>|<Link to="/blogs">FAO</Link>|
             <Link className="buttonStyleDark" to="/signup">
               INSCRIPTION
             </Link>
@@ -19,7 +19,9 @@ const Navigat = () => {
               CONNECTION
             </Link>
           </div>
-          <div className="box2 fat">PORTAL SANTE</div>
+          <div className="box2 fat">
+            <Link to="/">PORTAL SANTE</Link>
+          </div>
           <div className="box3">
             <img src={logo} height="181px" />
           </div>

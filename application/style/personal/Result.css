@@ -39,7 +39,7 @@
 .foto {
   width: 161px;
   height: 180px;
-  background-image: url('./pictures/cat1.png');
+  background-image: url('../../pictures/cat1.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
