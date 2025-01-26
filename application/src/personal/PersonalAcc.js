@@ -107,7 +107,7 @@ const Info = () => {
       id: 1,
       nom: 'Hugo',
       prénom: 'Victor',
-      date_de_naissance: '(26/01/1802',
+      date_de_naissance: '26/01/1802',
       ville: 'Besançon',
       adresse: 'Ksfjdl fsljdf 8',
       numéro_assurance: '1284723469',
@@ -153,7 +153,7 @@ const Info = () => {
           })}
         </div>
         <div id="fotoInfo">
-          <div className="foto"></div>
+          <div className="foto shadowFoto"></div>
           <div className="btnSize buttonStyleDark2 fat">modifier</div>
           <div className="lineSize fat">documents justificatifs</div>
           <div className="addFile thin">
@@ -187,5 +187,37 @@ text/plain, application/pdf, image/*"
 };
 
 const FillInformation = () => {
-  return <div>BoxINFO</div>;
+  var titleUnit = [
+    {
+      1: 'Réservations',
+      2: 'Antécédents médicaux',
+      3: 'Consultations',
+      4: 'Prescription',
+      5: 'Vaccinations',
+      6: 'Tests',
+    },
+  ];
+  var noteUnit = [
+    {
+      note1:
+        'Lorem ipsum odor amet, consectetuer adipiscing elit Fames cras fusce duis inceptos faucibus amet nulla. Taciti aenean nam feugiat eros convallis metus. Parturient hac imperdiet taciti praesent dis eu dictum  euismod vitae. Duis taciti elementum sodales eleifend tellus urna. Sem ultricies at a orci lacus. Consequat aliquet mauris nostra eget facilisis maximus.  Ornare quis ante duis laoreet morbi potenti. Senectus sollicitudin nec cras enim erat nisi velit litora.',
+      note2:
+        'Pharetra nostra bibendum ante at tellus. Lobortis condimentum augue metus purus nisi ligula. Euismod mollis ac in blandit dolor risus commodo cubilia. Convallis dictum ullamcorper bibendum tempor dapibus tellus consequat imperdiet. Lobortis pretium sed natoque magnis leo sapien posuere vitae. Volutpat ridiculus hendrerit augue magnis placerat volutpat. Atincidunt ultrices leo malesuada eleifend ad. Et dictum libero fermentum maecenas faucibus quam magnis risus.',
+    },
+  ];
+  return (
+    <>
+      <div className="titleStyle lineStyle fat">Réservations</div>;
+      <div className="blocNote">
+        {Object.entries(noteUnit[0]).map(([key, value]) => {
+          return (
+            <div className="linesNote">
+              <div className="dataNote buttonStyleDark2 fat">{key}</div>
+              <div className="infoNote fat">{value}</div>
+            </div>
+          );
+        })}
+      </div>
+    </>
+  );
 };
